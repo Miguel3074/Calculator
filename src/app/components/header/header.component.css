@@ -1,0 +1,44 @@
+.header {
+  background-color: #444;
+  border-bottom: 3px solid #138d5a;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+a:hover {
+  border: 4px double #138d5a;
+}
+
+.brand,
+.links {
+  min-height: 18vh;
+  display: flex;
+  font-size: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 2px;
+}
+
+.brand img {
+  width: 100px;
+  margin: 0.6em;
+}
+
+.brand:hover > h2 {
+  color: #138d5a;
+  transition: 1s;
+}
+
+.links li {
+  margin: 1px;
+  list-style: none;
+  font-size: 25px;
+}
+
+.links a {
+  padding: 0.1em 0.3em;
+}

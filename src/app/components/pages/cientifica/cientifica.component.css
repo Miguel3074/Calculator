@@ -1,0 +1,81 @@
+.cientifica {
+  padding-top: 1vh;
+  background-color: #363636;
+  min-height: 66.7vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.instrucao {
+  text-align: center;
+  max-width: 20%;
+  margin-right: 3%;
+  margin-left: 3%;
+  padding: 10px;
+  border: 5px solid #138d5a;
+  background-color: #444;
+  border-radius: 12px;
+  box-shadow: 0 0 40px 10px #03311efb;
+}
+
+.instrucao h2 {
+  color: #138d5a;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  font-size: 30px;
+  font-family: inherit;
+  font-weight: inherit;
+  text-align: left;
+}
+
+.calculator {
+  border-radius: 12px;
+  box-shadow: 0 0 40px 10px #03311efb;
+  overflow: hidden;
+}
+
+.display {
+  background-color: #222222;
+  color: #fff;
+  font-size: 3em;
+  padding: 0.5em 0.75em;
+  text-align: right;
+}
+
+.botoes {
+  background-color: #999;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.botoes > * {
+  background-color: #fff;
+  padding: 0.5em 1.25em;
+  position: relative;
+  text-align: center;
+}
+
+.botoes > *:active::before,
+.botoes > .is-depressed::before {
+  background-color: rgba(0, 0, 0, 1);
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.operador {
+  background-color: #eee;
+}
+
+.igual {
+  background-image: linear-gradient(to bottom, #16aa6c, #064e30);
+}

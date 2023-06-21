@@ -1,0 +1,46 @@
+<div class="home">
+  <div class="instrucao">
+    <h2>Atenção!</h2>
+    <p>
+      Se o Número que for digitar primeiro for negativo, basta apertar o
+      operador "-", o "Número" e o "=" na sequencia
+    </p>
+  </div>
+  <div class="calculator">
+    <div class="display">{{ this.num_q_aparece }}</div>
+
+    <div class="botoes">
+      <button class="operador" data-action="porcent" (click)="apertou_op('%')">
+        %
+      </button>
+      <button class="operador" data-action="multiply" (click)="apertou_op('x')">
+        &times;
+      </button>
+      <button class="operador" data-action="divide" (click)="apertou_op('/')">
+        ÷
+      </button>
+      <button class="operador" data-action="subtract" (click)="apertou_op('-')">
+        -
+      </button>
+      <button (click)="apertou_n(7)">7</button>
+      <button (click)="apertou_n(8)">8</button>
+      <button (click)="apertou_n(9)">9</button>
+
+      <button class="operador" data-action="add" (click)="apertou_op('+')">
+        +
+      </button>
+      <button (click)="apertou_n(4)">4</button>
+      <button (click)="apertou_n(5)">5</button>
+      <button (click)="apertou_n(6)">6</button>
+      <button (click)="apertou_n(1)">1</button>
+      <button (click)="apertou_n(2)">2</button>
+      <button (click)="apertou_n(3)">3</button>
+      <button (click)="apertou_n(0)">0</button>
+      <button data-action="decimal" (click)="apertou_dec()">.</button>
+      <button data-action="clear" (click)="apertou_limpar()">AC</button>
+      <button class="igual" data-action="calculate" (click)="apertou_igual()">
+        =
+      </button>
+    </div>
+  </div>
+</div>
